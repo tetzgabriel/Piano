@@ -29,8 +29,7 @@ async function doremifa(){
         som = musica[i];
         som.currentTime = 0;
         
-        if(som != Pausa)
-            som.play();
+        if(som != Pausa) som.play();
 
         await sleep(225);
     }
