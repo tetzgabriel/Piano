@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-family: 'Alata', sans-serif;
+}
+
+.title {
+    font-size: 5em;
+}
+
+.piano {
+    display: flex;
+}
+
+.tecla {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.preta {
+    width: 2em;
+    height: 9em;
+    background-color: black;
+    margin: 0 -1em 0 -1em;
+    z-index: 2;
+}
+
+.branca {
+    width: 4em;
+    height: 16em;
+    background-color: white;
+}
+
+.branca:active {
+    background-color: grey;
+}
