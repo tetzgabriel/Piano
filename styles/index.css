@@ -29,6 +29,10 @@ body {
     z-index: 2;
 }
 
+.preta:active {
+    background-color: #3d3d3d;
+}
+
 .branca {
     width: 4em;
     height: 16em;
@@ -36,5 +40,5 @@ body {
 }
 
 .branca:active {
-    background-color: grey;
+    background-color: #c2c0c0;
 }
