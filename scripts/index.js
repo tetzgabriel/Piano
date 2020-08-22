@@ -1,5 +1,5 @@
 const teclas = document.querySelectorAll('.tecla');
-console.log(teclas)
+
 teclas.forEach(tecla => {
     tecla.addEventListener('click', () => {
         tocar(tecla);

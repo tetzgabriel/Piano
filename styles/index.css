@@ -13,6 +13,7 @@ body {
 }
 
 .piano {
+    margin-top: 1em;
     display: flex;
 }
 
@@ -34,6 +35,10 @@ body {
 }
 
 .branca {
+    cursor: default;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
     width: 4em;
     height: 16em;
     background-color: white;
