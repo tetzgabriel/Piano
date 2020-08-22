@@ -24,8 +24,10 @@ async function doremifa(){
     const musica = [C, D, E, F, Pausa, F, F, Pausa, C, D, C, D, Pausa, D, D, Pausa, C, G, F, E, Pausa, E, E, Pausa, C, D, E, F];
 
     for(var i = 0; i < musica.length; i++){
-        await sleep(230);
         som = musica[i];
+        
+        await sleep(230);
+        
         som.currentTime = 0;
         
         if(som != Pausa) som.play();
