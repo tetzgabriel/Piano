@@ -12,8 +12,29 @@ body {
     font-size: 5em;
 }
 
+.piano {
+    display: flex;
+}
+
 .tecla {
-    width: 1.5em;
-    height: 4em;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.preta {
+    width: 2em;
+    height: 9em;
+    background-color: black;
+    margin: 0 -1em 0 -1em;
+    z-index: 2;
+}
+
+.branca {
+    width: 4em;
+    height: 16em;
     background-color: white;
+}
+
+.branca:active{
+    background-color: grey;
 }
