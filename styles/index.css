@@ -30,10 +30,6 @@ body {
     z-index: 2;
 }
 
-.preta:active {
-    background-color: #3d3d3d;
-}
-
 .branca {
     cursor: default;
     display: flex;
@@ -46,6 +42,10 @@ body {
 
 .branca:active {
     background-color: #c2c0c0;
+}
+
+.preta:active {
+    background-color: #3d3d3d;
 }
 
 .proibido-selecionar {
