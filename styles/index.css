@@ -44,14 +44,6 @@ body {
     background-color: white;
 }
 
-.branca:active {
-    background-color: #c2c0c0;
-}
-
-.preta:active {
-    background-color: #3d3d3d;
-}
-
 .botoes {
     margin-top: 2em;
 }
