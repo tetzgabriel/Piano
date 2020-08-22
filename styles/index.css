@@ -47,3 +47,12 @@ body {
 .branca:active {
     background-color: #c2c0c0;
 }
+
+.proibido-selecionar {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
