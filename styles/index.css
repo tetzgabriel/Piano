@@ -22,6 +22,7 @@ body {
 }
 
 .tecla {
+    border-radius: 3px;
     border: 1px solid black;
     box-sizing: border-box;
 }
