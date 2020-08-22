@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    font-family: 'Alata', sans-serif;
+}
+
+.title {
+    font-size: 5em;
+}
+
+.tecla {
+    width: 1.5em;
+    height: 4em;
+    background-color: white;
+}
