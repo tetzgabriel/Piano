@@ -1,11 +1,15 @@
+* {
+    font-family: 'Alata', sans-serif;
+}
+
 body {
     display: flex;
     flex: 1;
+    min-height: 90vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: red;
-    font-family: 'Alata', sans-serif;
+    background-color: #FF2E00;
 }
 
 .title {
@@ -46,6 +50,24 @@ body {
 
 .preta:active {
     background-color: #3d3d3d;
+}
+
+.botoes {
+    margin-top: 2em;
+}
+
+.botao{
+    width: 10em;
+    height: 3em;
+    border-radius: 8px;
+    outline: none;
+    background-color: #36558F;
+    margin-bottom: 30vh;
+}
+
+.rodape {
+    font-size: 0.85em;
+    align-self: center;
 }
 
 .proibido-selecionar {
