@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: blue;
+    background-color: #FF2E00;
 }
 
 .title {
@@ -22,7 +22,6 @@ body {
 }
 
 .tecla {
-    border-radius: 3px;
     border: 1px solid black;
     box-sizing: border-box;
 }
