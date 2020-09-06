@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #FF2E00;
+    background-color: blue;
 }
 
 .title {
