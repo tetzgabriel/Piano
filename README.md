@@ -1,4 +1,4 @@
-# VanillaPiano
+# Piano
 This project was created for Dextra EstagioTech 2021 intern program.<br>
 The main object of this repository is to teach Git basics to Dextra´s new interns in a simple and fun way
 
