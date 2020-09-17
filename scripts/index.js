@@ -34,6 +34,28 @@ async function doremifa(){
     }
 }
 
+async function brilhaBrilhaEstrelinha(){
+    const C = document.getElementById("C");
+    const D = document.getElementById("D");
+    const E = document.getElementById("E");
+    const F = document.getElementById("F");
+    const G = document.getElementById("G");
+    const A = document.getElementById("A")
+    const Pausa = document.getElementById("Pausa");
+
+    const musica = [C, C, G, G, A, A, G, G, F, F, E, E, D, D, Pausa, C, Pausa, F, F, E, E, D, D, G, G, F, F, E, E, D, D, Pausa, C, Pausa, C, G, G, A, A, G, G, F, F, E, E, D, D, Pausa, C];
+
+    for(var i = 0; i < musica.length; i++){
+        som = musica[i];
+        
+        await sleep(410);
+        
+        som.currentTime = 0;
+        
+        if(som != Pausa) som.play();
+    }
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
