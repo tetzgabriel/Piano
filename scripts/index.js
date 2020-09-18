@@ -59,3 +59,25 @@ async function brilhaBrilhaEstrelinha(){
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+const playKeys = {
+    //Notas Naturais
+    A: () => tocar(teclas[0]),
+    S: () => tocar(teclas[2]),
+    D: () => tocar(teclas[4]),
+    F: () => tocar(teclas[5]),
+    G: () => tocar(teclas[7]),
+    H: () => tocar(teclas[9]),
+    J: () => tocar(teclas[11]),
+    //Acidentes
+    W: () => tocar(teclas[1]),
+    E: () => tocar(teclas[3]),
+    T: () => tocar(teclas[6]),
+    Y: () => tocar(teclas[8]),
+    U: () => tocar(teclas[10]),
+}
+
+document.body.onkeypress = evt => {
+    const actualKey = evt.code.substring(3, evt.code.length)
+    playKeys[actualKey]()
+}
