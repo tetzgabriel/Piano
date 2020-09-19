@@ -121,7 +121,7 @@ const playKeys = {
     },
     U: () => {
         tocar(teclas[10])
-        changeColor(teclas[11])
+        changeColor(teclas[10])
     },
 }
 
