@@ -44,11 +44,11 @@ body {
     background-color: white;
 }
 
-.branca:active {
+.branca-active, .branca:active {
     background-color: #c2c0c0;
 }
 
-.preta:active {
+.preta-active, .preta:active {
     background-color: #3d3d3d;
 }
 
