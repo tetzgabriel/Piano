@@ -56,6 +56,21 @@ async function brilhaBrilhaEstrelinha(){
     }
 }
 
+async function maryHadALittleLamb(){
+    const C = document.getElementById("C");
+    const D = document.getElementById("D");
+    const E = document.getElementById("E");
+    const Pausa = document.getElementById("Pausa");
+    musica = [E, D, C, D, E, E, E, Pausa, D, D, D, Pausa, E, E, E, Pausa, E, D, C, D, E, E, E, Pausa, E, D, D, E, D, C]
+
+    for(var i = 0; i < musica.length; i++){
+        await sleep(425);
+        musica[i].currentTime = 0;
+        if(musica[i] != Pausa) musica[i].play();
+    }
+
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
