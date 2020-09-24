@@ -9,11 +9,13 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #FF2E00;
+    background-color: #274149;
 }
 
 .title {
     font-size: 5em;
+    margin-top: 1.5em;
+    color: aliceblue;
 }
 
 .piano {
@@ -60,14 +62,18 @@ body {
     width: 10em;
     height: 3em;
     border-radius: 8px;
+    border-color: rgb(18, 18, 19);
     outline: none;
-    background-color: #36558F;
+    background-color: #ebcb47;
     margin-bottom: 30vh;
+    font-size: .9em;
 }
 
 .rodape {
-    font-size: 0.85em;
+    font-size: 1em;
     align-self: center;
+    background-color: wheat;
+    padding: 1em;
 }
 
 .proibido-selecionar {
