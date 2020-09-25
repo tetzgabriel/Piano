@@ -1,4 +1,12 @@
 const teclas = document.querySelectorAll('.tecla');
+var isPlaying = false;
+var stop = false;
+
+async function stop_song(){
+    stop=true;
+    await sleep(500);
+    stop = false;
+}
 
 teclas.forEach(tecla => {
     tecla.addEventListener('click', () => {
@@ -14,61 +22,104 @@ function tocar(nota){
 }
 
 async function doremifa(){
-    const C = document.getElementById("C");
-    const D = document.getElementById("D");
-    const E = document.getElementById("E");
-    const F = document.getElementById("F");
-    const G = document.getElementById("G");
-    const Pausa = document.getElementById("Pausa");
+    if (isPlaying==false){
+        const C = document.getElementById("C");
+        const D = document.getElementById("D");
+        const E = document.getElementById("E");
+        const F = document.getElementById("F");
+        const G = document.getElementById("G");
+        const Pausa = document.getElementById("Pausa");
 
-    const musica = [C, D, E, F, Pausa, F, F, Pausa, C, D, C, D, Pausa, D, D, Pausa, C, G, F, E, Pausa, E, E, Pausa, C, D, E, F];
+        const musica = [C, D, E, F, Pausa, F, F, Pausa, C, D, C, D, Pausa, D, D, Pausa, C, G, F, E, Pausa, E, E, Pausa, C, D, E, F];
 
-    for(var i = 0; i < musica.length; i++){
-        som = musica[i];
-        
-        await sleep(230);
-        
-        som.currentTime = 0;
-        
-        if(som != Pausa) som.play();
+        isPlaying=true;
+        for(var i = 0; i < musica.length; i++){
+            if (stop==true) break;
+
+            som = musica[i];
+            
+            await sleep(230);
+            
+            som.currentTime = 0;
+            
+            if(som != Pausa) som.play();
+        }
+        isPlaying=false;
     }
 }
 
 async function brilhaBrilhaEstrelinha(){
-    const C = document.getElementById("C");
-    const D = document.getElementById("D");
-    const E = document.getElementById("E");
-    const F = document.getElementById("F");
-    const G = document.getElementById("G");
-    const A = document.getElementById("A")
-    const Pausa = document.getElementById("Pausa");
+    if (isPlaying==false){
+        const C = document.getElementById("C");
+        const D = document.getElementById("D");
+        const E = document.getElementById("E");
+        const F = document.getElementById("F");
+        const G = document.getElementById("G");
+        const A = document.getElementById("A")
+        const Pausa = document.getElementById("Pausa");
 
-    const musica = [C, C, G, G, A, A, G, G, F, F, E, E, D, D, Pausa, C, Pausa, F, F, E, E, D, D, G, G, F, F, E, E, D, D, Pausa, C, Pausa, C, G, G, A, A, G, G, F, F, E, E, D, D, Pausa, C];
+        const musica = [C, C, G, G, A, A, G, G, F, F, E, E, D, D, Pausa, C, Pausa, F, F, E, E, D, D, G, G, F, F, E, E, D, D, Pausa, C, Pausa, C, G, G, A, A, G, G, F, F, E, E, D, D, Pausa, C];
 
-    for(var i = 0; i < musica.length; i++){
-        som = musica[i];
-        
-        await sleep(410);
-        
-        som.currentTime = 0;
-        
-        if(som != Pausa) som.play();
+        isPlaying=true;
+        for(var i = 0; i < musica.length; i++){
+            if (stop==true) break;
+
+            som = musica[i];
+            
+            await sleep(410);
+            
+            som.currentTime = 0;
+            
+            if(som != Pausa) som.play();
+        }
+        isPlaying=false;
     }
 }
 
 async function maryHadALittleLamb(){
-    const C = document.getElementById("C");
-    const D = document.getElementById("D");
-    const E = document.getElementById("E");
-    const Pausa = document.getElementById("Pausa");
-    musica = [E, D, C, D, E, E, E, Pausa, D, D, D, Pausa, E, E, E, Pausa, E, D, C, D, E, E, E, Pausa, E, D, D, E, D, C]
+    if (isPlaying==false){
+        const C = document.getElementById("C");
+        const D = document.getElementById("D");
+        const E = document.getElementById("E");
+        const Pausa = document.getElementById("Pausa");
+        musica = [E, D, C, D, E, E, E, Pausa, D, D, D, Pausa, E, E, E, Pausa, E, D, C, D, E, E, E, Pausa, E, D, D, E, D, C]
 
-    for(var i = 0; i < musica.length; i++){
-        await sleep(425);
-        musica[i].currentTime = 0;
-        if(musica[i] != Pausa) musica[i].play();
-    }
+        isPlaying=true;
+        for(var i = 0; i < musica.length; i++){
+            if (stop==true) break;
+            await sleep(425);
+            musica[i].currentTime = 0;
+            if(musica[i] != Pausa) musica[i].play();
+        }
+        isPlaying=false;
+    }    
+}
 
+async function parabensPraVoce(){
+    if (isPlaying==false){
+        const A = document.getElementById("A");
+        const B = document.getElementById("B");
+        const C = document.getElementById("C");
+        const D = document.getElementById("D");
+        const E = document.getElementById("E");
+        const F = document.getElementById("F");
+        const G = document.getElementById("G");
+        const Pausa = document.getElementById("Pausa");
+        musica = [C, C, D, C, F, E, Pausa, C, C, D, C, G, F, F, Pausa, A, A, B, A, F, E, D, Pausa, B, B, A, F, G, F, F,]
+
+        isPlaying=true;
+        for(var i = 0; i < musica.length; i++){
+           
+            if (stop==true) break;
+            
+            await sleep(350);
+            
+            musica[i].currentTime = 0;
+           
+            if(musica[i] != Pausa) musica[i].play();
+        }
+        isPlaying=false;
+    }   
 }
 
 function sleep(ms) {

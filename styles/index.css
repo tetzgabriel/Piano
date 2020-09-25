@@ -68,6 +68,16 @@ body {
     margin-bottom: 30vh;
     font-size: .9em;
 }
+.botao_stop{
+    width: 5em;
+    height: 3em;
+    border-radius: 8px;
+    border-color: rgb(18, 18, 19);
+    outline: none;
+    background-color: #ff0000;
+    margin-bottom: 30vh;
+    font-size: .9em;
+}
 
 .rodape {
     font-size: 1em;
